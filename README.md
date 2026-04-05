@@ -39,6 +39,7 @@ A two-stage hybrid ensemble:
 | Oblast identity (one-hot, 25 regions) | 25 |
 
 Continuous features are z-scored with `StandardScaler`; oblast dummies are passed unscaled.
+A full description of every feature is in [`FEATURES.md`](FEATURES.md).
 
 ---
 
