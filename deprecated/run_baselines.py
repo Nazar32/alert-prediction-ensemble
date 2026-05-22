@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# ===== DEPRECATED =====
 """
 run_baselines.py
 ================

@@ -6,3 +6,5 @@ torch>=2.1
 statsmodels>=0.14
 xgboost>=2.0
 lightgbm>=4.0
+catboost>=1.2
+matplotlib>=3.7

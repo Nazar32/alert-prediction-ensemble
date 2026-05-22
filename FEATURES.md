@@ -1,7 +1,9 @@
 # Feature List
 
-Complete list of all 95 input features used by the DNN+RF ensemble.
-All features are computed in `src/data_utils.py` → `engineer_features()`.
+Complete list of all 95 input features used by the reference (DNN+RF)
+instantiation of the per-region precision-constrained calibration framework.
+All features are computed in `src/proposed_model.py` →
+`engineer_features()`.
 
 Continuous/binary features (70) are z-scored with `StandardScaler` before
 being passed to the DNN and RF. Oblast identity dummies (25) are passed
@@ -87,7 +89,7 @@ Computed over windows *w* ∈ {3, 6, 12, 24, 48, 72} hours — 6 features per st
 
 ## Spatial — Neighbours (4 features)
 
-Neighbours are defined by the `OBLAST_NEIGHBORS` adjacency graph in `src/data_utils.py`,
+Neighbours are defined by the `OBLAST_NEIGHBORS` adjacency graph in `src/proposed_model.py`,
 based on shared land borders between Ukrainian oblasts.
 
 | Feature | Description |
